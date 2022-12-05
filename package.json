@@ -1,0 +1,4 @@
+{
+  "name": "battleship-types",
+  "main": "src/index.ts"
+}
