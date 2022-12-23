@@ -11,7 +11,7 @@ export type ErrorMessage = {
   text: string;
 };
 
-export type RoomCreatedMessage = Room;
+export type RoomCreatedMessage = Omit<Room, 'player2'>;
 
 export type RoomJoinMessage = { room: Room; user: User };
 
