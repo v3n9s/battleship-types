@@ -1,4 +1,4 @@
-import { Room, User } from '../other';
+import { RoomDto, UserDto } from '../other';
 import {
   KeysAsValues,
   MergeObjects,
@@ -11,11 +11,11 @@ export type ErrorMessage = {
   text: string;
 };
 
-export type RoomCreatedMessage = Omit<Room, 'player2'>;
+export type RoomCreatedMessage = Omit<RoomDto, 'player2'>;
 
-export type RoomJoinMessage = { roomId: string; user: User };
+export type RoomJoinMessage = { roomId: string; user: UserDto };
 
-export type ExistingRoomsMessage = Room[];
+export type ExistingRoomsMessage = RoomDto[];
 
 export type ServerMessages = {
   Error: ErrorMessage;

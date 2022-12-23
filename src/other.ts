@@ -1,11 +1,11 @@
-export type User = {
+export type UserDto = {
   id: string;
   name: string;
 };
 
-export type Room = {
+export type RoomDto = {
   id: string;
   name: string;
-  player1: User;
-  player2?: User;
+  player1: UserDto;
+  player2?: UserDto;
 };
