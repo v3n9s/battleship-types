@@ -13,7 +13,7 @@ export type ErrorMessage = {
 
 export type RoomCreatedMessage = Omit<Room, 'player2'>;
 
-export type RoomJoinMessage = { room: Room; user: User };
+export type RoomJoinMessage = { roomId: string; user: User };
 
 export type ExistingRoomsMessage = Room[];
 
