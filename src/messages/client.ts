@@ -16,9 +16,14 @@ export type JoinRoomMessage = {
   password: string;
 };
 
+export type LeaveRoomMessage = {
+  id: string;
+};
+
 export type ClientMessages = {
   CreateRoom: CreateRoomMessage;
   JoinRoom: JoinRoomMessage;
+  LeaveRoom: LeaveRoomMessage;
 };
 
 export type ClientMessage = UnionFromObject<
