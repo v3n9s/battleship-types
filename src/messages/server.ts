@@ -15,12 +15,18 @@ export type RoomCreatedMessage = Omit<RoomDto, 'player2'>;
 
 export type RoomJoinMessage = { roomId: string; user: UserDto };
 
+export type RoomLeaveMessage = { roomId: string; userId: string };
+
+export type RoomDeleteMessage = { roomId: string };
+
 export type ExistingRoomsMessage = RoomDto[];
 
 export type ServerMessages = {
   Error: ErrorMessage;
   RoomCreated: RoomCreatedMessage;
   RoomJoin: RoomJoinMessage;
+  RoomLeave: RoomLeaveMessage;
+  RoomDelete: RoomDeleteMessage;
   ExistingRooms: ExistingRoomsMessage;
 };
 
