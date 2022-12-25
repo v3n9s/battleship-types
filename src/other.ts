@@ -10,3 +10,8 @@ export type RoomDto = {
   player1: UserDto;
   player2?: UserDto | undefined;
 };
+
+export type UserData = {
+  token: string;
+  user: UserDto;
+};
