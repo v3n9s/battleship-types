@@ -19,6 +19,10 @@ export type RoomLeaveMessage = { roomId: string; userId: string };
 
 export type RoomDeleteMessage = { roomId: string };
 
+export type RoomReadyMessage = { roomId: string; userId: string };
+
+export type GameReadyMessage = { roomId: string; userId: string };
+
 export type ExistingRoomsMessage = RoomDto[];
 
 export type ServerMessages = {
@@ -27,6 +31,8 @@ export type ServerMessages = {
   RoomJoin: RoomJoinMessage;
   RoomLeave: RoomLeaveMessage;
   RoomDelete: RoomDeleteMessage;
+  RoomReady: RoomReadyMessage;
+  GameReady: GameReadyMessage;
   ExistingRooms: ExistingRoomsMessage;
 };
 
